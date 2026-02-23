@@ -28,12 +28,12 @@
 ```json
 
 {
-    "firstName": "Maria",
-    "lastName": "Buitrago",
-    "email": "maria.buitrago@estudiante.com",
-    "birthDate": "1985-03-12",
-    "id": 2,
-    "phone": "3002221115"
+    "firstName": "Ana",
+    "lastName": "García",
+    "email": "ana.garcia@estudiante.com",
+    "birthDate": "2001-03-12",
+    "id": 3,
+    "phone": "3004445566"
 }
 ```
 
@@ -58,13 +58,13 @@
         "id": 1,
         "phone": "3001234567"
     },
-    {
-        "firstName": "Maria",
-        "lastName": "Buitrago",
-        "email": "maria.buitrago@estudiante.com",
-        "birthDate": "1985-03-12",
-        "id": 2,
-        "phone": "3002221115"
+      {
+        "firstName": "Ana",
+        "lastName": "García",
+        "email": "ana.garcia@estudiante.com",
+        "birthDate": "2001-03-12",
+        "id": 3,
+        "phone": "3004445566"
     }
 ]
 
@@ -107,12 +107,12 @@
 ```json
 
 {
-    "firstName": "Maria",
-    "lastName": "Buitrago",
-    "email": "maria.buitrago@estudiante.com",
-    "birthDate": "1985-03-12",
+    "firstName": "Ana",
+    "lastName": "García",
+    "email": "ana.garcia@estudiante.com",
+    "birthDate": "2001-03-12",
     "id": 2,
-    "phone": "3002221115"
+    "phone": "3004445566"
 }
 
 
