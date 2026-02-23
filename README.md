@@ -166,8 +166,11 @@
 
 ```json
 
-La API devuelve 404 porque el recurso no existe en la base de datos.
-Por tanto el Json esta vacio
+{
+    "status": 404,
+    "error": "Not Found",
+    "message": "Student not found with id 999"
+}
 
 ```
 
@@ -183,8 +186,7 @@ Por tanto el Json esta vacio
 
 ```json
 
-La API devuelve 204 porque el recurso no existe en la base de datos.
-Por tanto el Json esta vacio
+{}
 
 
 ```
