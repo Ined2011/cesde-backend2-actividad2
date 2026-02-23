@@ -27,10 +27,17 @@
 
 ```json
 
-
+{
+    "firstName": "Maria",
+    "lastName": "Buitrago",
+    "email": "maria.buitrago@estudiante.com",
+    "birthDate": "1985-03-12",
+    "id": 2,
+    "phone": "3002221115"
+}
 ```
 
-* **Código de Estado (Status Code):** `____`
+* **Código de Estado (Status Code):** `201 Created`
 
 ---
 
@@ -42,10 +49,28 @@
 
 ```json
 
+[
+    {
+        "firstName": "Juan",
+        "lastName": "Perez",
+        "email": "juan.perez+test@example.com",
+        "birthDate": "1995-06-15",
+        "id": 1,
+        "phone": "3001234567"
+    },
+    {
+        "firstName": "Maria",
+        "lastName": "Buitrago",
+        "email": "maria.buitrago@estudiante.com",
+        "birthDate": "1985-03-12",
+        "id": 2,
+        "phone": "3002221115"
+    }
+]
 
 ```
 
-* **Código de Estado (Status Code):** `____`
+* **Código de Estado (Status Code):** `200 OK`
 
 ---
 
@@ -57,10 +82,19 @@
 
 ```json
 
+{
+    "firstName": "Juan",
+    "lastName": "Perez",
+    "email": "juan.perez+test@example.com",
+    "birthDate": "1995-06-15",
+    "id": 1,
+    "phone": "3001234567"
+}
+
 
 ```
 
-* **Código de Estado (Status Code):** `____`
+* **Código de Estado (Status Code):** `200 OK`
 
 ---
 
@@ -72,10 +106,19 @@
 
 ```json
 
+{
+    "firstName": "Maria",
+    "lastName": "Buitrago",
+    "email": "maria.buitrago@estudiante.com",
+    "birthDate": "1985-03-12",
+    "id": 2,
+    "phone": "3002221115"
+}
+
 
 ```
 
-* **Código de Estado (Status Code):** `____`
+* **Código de Estado (Status Code):** `200 OK`
 
 ---
 
@@ -100,10 +143,18 @@
 
 ```json
 
+{
+    "firstName": "Ana María",
+    "lastName": "García",
+    "email": "ana.garcia@estudiante.com",
+    "birthDate": "2001-03-12",
+    "id": 1,
+    "phone": "3119998877"
+}
 
 ```
 
-* **Código de Estado (Status Code):** `____`
+* **Código de Estado (Status Code):** `200 OK`
 
 ---
 
@@ -114,11 +165,11 @@
 * **Respuesta del Servidor (Completar):**
 
 ```json
-
+1
 
 ```
 
-* **Código de Estado (Status Code):** `____`
+* **Código de Estado (Status Code):** `404 Not Found`
 
 ---
 
@@ -130,10 +181,11 @@
 
 ```json
 
+1
 
 ```
 
-* **Código de Estado (Status Code):** `____`
+* **Código de Estado (Status Code):** `204 No Content`
 
 ---
 
@@ -143,22 +195,23 @@
 
 1. **¿Cuál es la diferencia entre los códigos de estado 200 y 201? ¿En qué endpoints se obtuvieron cada uno?**
 * *Respuesta:*
-
+El código 200 es que confirma que fue exitoso y el 201 confirma que se creo un nuevo estudiante en la BD. En los endpoins: En crear,obtener la lista, buscar estudiante por ID y por Email, también en actualizar estudiante
 
 2. **En el escenario de error (punto 6), ¿qué información devuelve la API y por qué es importante para un desarrollador frontend recibir un código 404 en lugar de un código 500?**
 * *Respuesta:*
-
+Devuelve un 404 Not Found. Dado a que este error es de un ID que no existe por parte del cliente y el error 500 hace referencia al servidor que falla en el backend.
 
 3. **¿Qué sucede en la base de datos PostgreSQL cuando se ejecuta con éxito la petición DELETE? (Explique brevemente en términos de persistencia).**
 * *Respuesta:*
-
+Como su palabra lo dice se elimina definitivamnete el ID solcitado y se consulta por GET este ya no va a registrar.
 
 4. **Si intentara crear un estudiante con el mismo email que ya existe en la base de datos, ¿qué cree que sucedería y qué código de error sería el más adecuado para devolver?**
 * *Respuesta:*
-
+De una la BD lanza el error por ser un email duplicado con datos existentes, el código de error más adecuado podria ser 409 Conflict, por que existe un conflicto en un dato ya existente como es el email.
 
 5. **¿Por qué utilizamos el método PUT para actualizar y no el método POST? ¿Cuál es la convención técnica detrás de esta decisión?**
 * *Respuesta:*
+ El PUT actualiza el dato existente, y el POST se usa para crear nuevos datos. Por eso usamos PUT para actualizar, porque estamos modificando un dato existente por el identificador que es el ID.
 
 
 
