@@ -32,7 +32,7 @@
     "lastName": "García",
     "email": "ana.garcia@estudiante.com",
     "birthDate": "2001-03-12",
-    "id": 3,
+    "id": 2,
     "phone": "3004445566"
 }
 ```
@@ -63,7 +63,7 @@
         "lastName": "García",
         "email": "ana.garcia@estudiante.com",
         "birthDate": "2001-03-12",
-        "id": 3,
+        "id": 2,
         "phone": "3004445566"
     }
 ]
@@ -165,7 +165,9 @@
 * **Respuesta del Servidor (Completar):**
 
 ```json
-1
+
+La API devuelve 404 porque el recurso no existe en la base de datos.
+Por tanto el Json esta vacio
 
 ```
 
@@ -181,7 +183,9 @@
 
 ```json
 
-1
+La API devuelve 204 porque el recurso no existe en la base de datos.
+Por tanto el Json esta vacio
+
 
 ```
 
@@ -195,7 +199,7 @@
 
 1. **¿Cuál es la diferencia entre los códigos de estado 200 y 201? ¿En qué endpoints se obtuvieron cada uno?**
 * *Respuesta:*
-El código 200 es que confirma que fue exitoso y el 201 confirma que se creo un nuevo estudiante en la BD. En los endpoins: En crear,obtener la lista, buscar estudiante por ID y por Email, también en actualizar estudiante
+El código 200 es que confirma que fue exitoso y el 201 confirma que se creo un nuevo estudiante en la BD. En los endpoint de creacion
 
 2. **En el escenario de error (punto 6), ¿qué información devuelve la API y por qué es importante para un desarrollador frontend recibir un código 404 en lugar de un código 500?**
 * *Respuesta:*
